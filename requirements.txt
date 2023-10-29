@@ -9,4 +9,4 @@ gunicorn==21.2.0
 
 numpy==1.21.6
 
-scipy==1.11.3
+scipy==1.7.3
