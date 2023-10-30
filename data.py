@@ -104,7 +104,7 @@ class Deployment:
         if investment == 0:
             expected_iption_value_percent_value = 0
         else:
-            expected_iption_value_percent_value = round(expected_option_value_value / -investment, 4)
+            expected_iption_value_percent_value = round(expected_option_value_value / -investment, 2)
 
         if np.var(df['net_value']) != 0:
             confidence = scipy.stats.t.interval(0.95, len(df['net_value']) - 1, loc=np.mean(df['net_value']), scale=scipy.stats.sem(df['net_value']))
